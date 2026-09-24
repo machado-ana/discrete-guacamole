@@ -24,5 +24,4 @@ addFim n (h:t) = h:(addFim n t)
 -- Ex. 1e
 addElem :: Int -> Int -> [Int] -> [Int]
 addElem n 0 lista = n:lista
-addElem n 0 (h:t) = h:(addElem n 0 t)
-addElem n pos (_:t) = addElem n (pos-1) t
+addElem n pos (h:t) = h:(addElem n (pos-1) t)
