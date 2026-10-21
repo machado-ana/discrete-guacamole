@@ -1,7 +1,7 @@
 ------- Aula 06: Tuplas -------
 
 -- >> Teoria: Tuplas
--- Media de notas
+-- Média de notas
 type NomeAluno = String
 type MediaNota = Float
 type Aluno = (NomeAluno, MediaNota)
@@ -10,8 +10,8 @@ type Turma = [Aluno]
 aprovados :: Turma -> Float -> [NomeAluno]
 aprovados tma corte = [ nome | (nome, nota)<-tma, nota>=corte ]
 
--- >> Exercicios
--- Ex. 1: Distancia entre pontos
+-- >> Exercícios
+-- Ex. 1: Distância entre pontos
 type Point3D = (Float, Float, Float)
 
 dist3D :: Point3D -> Point3D -> Float

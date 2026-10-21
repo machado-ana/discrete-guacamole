@@ -1,6 +1,6 @@
-------- Aula 07: Casamento de Padroes -------
+------- Aula 07: Casamento de Padrões -------
 
--- >> Teoria: Casamento de Padroes
+-- >> Teoria: Casamento de Padrões
 -- Padroes
 padroes :: Int -> String
 padroes x = "Nao esta entre 1 e 3!"
@@ -21,7 +21,7 @@ padroes3 (_, _, _, fourth)
     | otherwise = "Menor que 10."
 
 -- >> Exercicios
--- Ex. 1: Reescrita de uma funcao
+-- Ex. 1: Reescrita de uma função
 opp :: (Int, (Int, Int)) -> Int
 opp (a, (b, c))
     | a == 1 = b + c

@@ -24,7 +24,7 @@ mdc x y
 
 
 -- >> Teoria: Recursão em cauda
--- Potênciacia de 2 normal
+-- Potência de 2 normal
 pot2 :: Int -> Int
 pot2 n
     | n == 0 = 1
