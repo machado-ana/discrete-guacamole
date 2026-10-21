@@ -1,4 +1,4 @@
--------- Lista 08: Linguagem Haskell -------
+-------- Lista 08: Linguagem Haskell I -------
 
 -- Ex. 1: Resto
 resto :: Int -> Int -> Int

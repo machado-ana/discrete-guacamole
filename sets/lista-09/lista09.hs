@@ -25,3 +25,17 @@ addFim n (h:t) = h:(addFim n t)
 addElem :: Int -> Int -> [Int] -> [Int]
 addElem n 0 lista = n:lista
 addElem n pos (h:t) = h:(addElem n (pos-1) t)
+
+
+-- Ex. 4a
+paresCol :: [[Int]] -> Int -> [Int]
+paresCol mat col = [lin !! col | lin<-mat, mod (lin !! col) 2 == 0]
+
+-- Ex. 4b
+somaMatriz :: [[Int]] -> [Int]
+somaMatriz [] = []
+somaMatriz mat = [somaLinha lin | lin<-mat]
+    where
+        somaLinha :: [Int] -> Int
+        somaLinha [] = 0
+        somaLinha (h:t) = h + somaLinha t
